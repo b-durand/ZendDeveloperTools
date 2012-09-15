@@ -33,11 +33,12 @@ class Options extends AbstractOptions
         'cache_dir'   => 'data/cache',
         'matcher'     => array(),
         'collectors' => array(
-            'db'        => 'ZendDeveloperTools\DbCollector',
-            'exception' => 'ZendDeveloperTools\ExceptionCollector',
-            'request'   => 'ZendDeveloperTools\RequestCollector',
-            'memory'    => 'ZendDeveloperTools\MemoryCollector',
-            'time'      => 'ZendDeveloperTools\TimeCollector',
+            'authentication' => 'ZendDeveloperTools\AuthenticationCollector',
+            'db'             => 'ZendDeveloperTools\DbCollector',
+            'exception'      => 'ZendDeveloperTools\ExceptionCollector',
+            'request'        => 'ZendDeveloperTools\RequestCollector',
+            'memory'         => 'ZendDeveloperTools\MemoryCollector',
+            'time'           => 'ZendDeveloperTools\TimeCollector',
         ),
     );
 
@@ -50,10 +51,11 @@ class Options extends AbstractOptions
         'position'      => 'bottom',
         'version_check' => false,
         'entries'       => array(
-            'request' => 'zend-developer-tools/toolbar/request',
-            'time'    => 'zend-developer-tools/toolbar/time',
-            'memory'  => 'zend-developer-tools/toolbar/memory',
-            'db'      => 'zend-developer-tools/toolbar/db',
+            'request'        => 'zend-developer-tools/toolbar/request',
+            'time'           => 'zend-developer-tools/toolbar/time',
+            'memory'         => 'zend-developer-tools/toolbar/memory',
+            'db'             => 'zend-developer-tools/toolbar/db',
+            'authentication' => 'zend-developer-tools/toolbar/authentication',
         ),
     );
 

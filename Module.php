@@ -168,6 +168,7 @@ class Module implements
                 'ZendDeveloperTools\MailCollector'      => 'ZendDeveloperTools\Collector\MailCollector',
                 'ZendDeveloperTools\MemoryCollector'    => 'ZendDeveloperTools\Collector\MemoryCollector',
                 'ZendDeveloperTools\TimeCollector'      => 'ZendDeveloperTools\Collector\TimeCollector',
+                'ZendDeveloperTools\AuthenticationCollector' => 'ZendDeveloperTools\Collector\AuthenticationCollector',
                 'ZendDeveloperTools\FlushListener'      => 'ZendDeveloperTools\Listener\FlushListener',
             ),
             'factories' => array(

@@ -1,0 +1,25 @@
+<div class="zdt-toolbar-entry">
+    <div class="zdt-toolbar-preview">
+        <img src="" alt="Authentication (Zend\Authentication)" />
+        <?php $color = $this->collector->hasIdentity() ? 'green' : 'red';?>
+        <span class="zdt-toolbar-info zdt-toolbar-color-<?php echo $color;?>">
+            <?php
+            if ($this->collector->hasIdentity()) {
+                echo $this->collector->getIdentity();
+            } else {
+                echo 'N/A';
+            }
+            ?>
+        </span>
+    </div>
+    <div class="zdt-toolbar-detail">
+        <span class="zdt-toolbar-info">
+            <?php if ($this->collector->hasIdentity()) :?>
+            <span class="zdt-detail-label">Identity</span>
+            <span class="zdt-detail-value zdt-detail-value-right"><?php echo $this->collector->getIdentity();?></span>
+            <?php else :?>
+            You are not authorized.
+            <?php endif;?>
+        </span>
+    </div>
+</div>
